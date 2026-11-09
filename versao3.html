@@ -299,7 +299,7 @@
   window.onload = async function() {
     const monitorSel = document.getElementById("monitor");
     try {
-      const response = await fetch(SCRIPT_URL);
+      const response = await fetch(SCRIPT_URL + "?api=registro&aba=Base_Registro_CicloAnterior");
       const data = await response.json();
 
       if (data.error) {
